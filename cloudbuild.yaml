@@ -16,4 +16,4 @@ substitutions:
   _VERSION: v1.0
 
 options:
-  logging: NONE
+  logging: CLOUD_LOGGING_ONLY

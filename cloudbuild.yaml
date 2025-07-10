@@ -8,7 +8,7 @@ steps:
   args: ['build','-t','gcr.io/${_PROJECT_ID}/${_CINAME}:${_VERSION}','.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push','-t','gcr.io/${_PROJECT_ID}/${_CINAME}:${_VERSION}','.']
+  args: ['push','gcr.io/${_PROJECT_ID}/${_CINAME}:${_VERSION}','.']
 
 substitutions:
   _PROJECT_ID: advance-proton-465106-q7

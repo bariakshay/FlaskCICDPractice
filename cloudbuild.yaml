@@ -14,3 +14,6 @@ substitutions:
   PROJECT_ID: advance-proton-465106-q7
   CINAME: gke-image
   VERSION: v1.0
+
+options:
+  logging: NONE

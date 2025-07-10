@@ -11,5 +11,5 @@ RUN pip install -r /app/requirements.txt
 #ENV BASE_URL "https://qinsight-dev.myqone.com/restservice"
 #ENV SWAGGER_JSON_URL "/swagger"
 ADD . /app
-ENV PORT 80
+#ENV PORT 8080
 CMD ["python", "app.py"]

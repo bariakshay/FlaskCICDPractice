@@ -1,0 +1,16 @@
+steps:
+
+# This step builds the container image.
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone','https://github.com/bariakshay/FlaskCICDPractice.git']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build','-t','gcr.io/${PROJECT_ID}/${CINAME}:${VERSION}','.']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push','-t','gcr.io/${PROJECT_ID}/${CINAME}:${VERSION}','.']
+
+substitutions:
+  PROJECT_ID: advance-proton-465106-q7
+  CINAME: gke-image
+  VERSION: v1.0

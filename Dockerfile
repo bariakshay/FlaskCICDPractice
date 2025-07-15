@@ -1,6 +1,6 @@
 FROM python:3.9.0
 #FROM python:3.7.0
-RUN apt-get update -y
+#RUN apt-get update -y
 WORKDIR /app
 ADD requirements.txt /app/requirements.txt
 #RUN pip install --upgrade pip
